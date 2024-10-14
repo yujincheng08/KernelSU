@@ -10,7 +10,7 @@ rust-version = "1.77.2"
 anyhow = "1"
 clap = { version = "4", features = ["derive"] }
 const_format = "0.2"
-zip = { version = "2.1.4", features = [
+zip = { version = "2.2.0", features = [
     "deflate",
     "deflate64",
     "bzip2",
@@ -19,7 +19,7 @@ zip = { version = "2.1.4", features = [
     "lzma",
     "xz",
 ], default-features = false }
-zip-extensions = "0.7"
+zip-extensions = "0.8"
 java-properties = "2"
 log = "0.4"
 env_logger = { version = "0.11", default-features = false }
@@ -34,7 +34,7 @@ extattr = "1"
 jwalk = "0.8"
 is_executable = "1"
 nom = "7"
-derive-new = "0.6"
+derive-new = "0.7"
 rust-embed = { version = "8", features = [
     "debug-embed",
     "compression", # must clean build after updating binaries
@@ -53,7 +53,7 @@ rustix = { git = "https://github.com/Kernel-SU/rustix.git", branch = "main", fea
 ] }
 # some android specific dependencies which compiles under unix are also listed here for convenience of coding
 android-properties = { version = "0.2", features = ["bionic-deprecated"] }
-procfs = "0.16"
+procfs = "0.17"
 loopdev = { git = "https://github.com/Kernel-SU/loopdev" }
 
 [target.'cfg(target_os = "android")'.dependencies]
